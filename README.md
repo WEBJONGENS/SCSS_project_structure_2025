@@ -65,7 +65,7 @@ templates/yootheme_custom/scss/
 │   ├── _index.scss
    ```
 
-# custom.scss 📄
+## custom.scss 📄
 
 Hier worden de mappen `globals` en `blocks` geforward. (Hoofdindex)
 
@@ -104,7 +104,7 @@ In deze map staan onze technische bestanden. Font-size berekeningen, breakpoints
 
 ### _fontsizes.scss 📄  
 Hier definiëren we de mixins voor lettergroottes en regelhoogtes met `clamp()`.  
-Clamp Calculator:  
+**Clamp Calculator: 🧮**
 https://tom-mate-o.github.io/min-max-calculator-nested/  
 *(De formule wordt nog aangepast naar `rem()`)*
 
