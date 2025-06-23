@@ -64,3 +64,55 @@ templates/yootheme_custom/scss/
 │   ├── _functions.scss
 │   ├── _index.scss
    ```
+
+# custom.scss 📄
+
+Hier worden de mappen `globals` en `blocks` geforward. (Hoofdindex)
+
+## blokken – Map 📁
+
+Hier wordt voor elk YooTheme-blok een eigen `.scss`-bestand aangemaakt.  
+Als je een nieuw `.scss`-bestand aanmaakt, moet je in `_index.scss` een `@forward` invoegen.
+
+## globals – Map 📁
+
+In deze map staan alle bestanden die globaal in het hele project beschikbaar zijn.
+
+### _boilerplate.scss 📄  
+**De “kookplaat”.** Hier kun je code invoegen die overal beschikbaar moet zijn,  
+zoals styling voor links, `.tekstblok`, enzovoort.
+
+### _buttons.scss 📄  
+Hier worden de mixins voor knoppen gedefinieerd.
+
+### _colors.scss 📄  
+Hier worden de variabelen voor kleuren gedefinieerd.
+
+### _headings.scss 📄  
+Hier worden de mixins voor headings gedefinieerd.
+
+### _index.scss 📄  
+Dit is de index voor de map `globals`.  
+Als je een nieuw SCSS-bestand aanmaakt, moet je hier een `@forward` invoegen.
+
+### _typography.scss 📄  
+Hier worden fonts geladen en de mixins voor fonts gedefinieerd.
+
+## util – Map 📁
+
+In deze map staan onze technische bestanden. Font-size berekeningen, breakpoints, formules, enzovoort.
+
+### _fontsizes.scss 📄  
+Hier definiëren we de mixins voor lettergroottes en regelhoogtes met `clamp()`.  
+Clamp Calculator:  
+https://tom-mate-o.github.io/min-max-calculator-nested/  
+*(De formule wordt nog aangepast naar `rem()`)*
+
+### _functions.scss 📄  
+Hier worden de functies `pxToRem` en `pxToEm` gedefinieerd, enzovoort.  
+Je hoeft hier niets aan te passen.
+
+### _index.scss 📄  
+Dit is de index voor de map `utils`.  
+Als je een nieuw SCSS-bestand aanmaakt, moet je hier een `@forward` invoegen.
+
