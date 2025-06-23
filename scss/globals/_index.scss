@@ -1,0 +1,8 @@
+// Dit is de index voor de map globals.
+// Als je een nieuwe SCSS bestand aanmaakt, moet je hier een forward invoeren
+
+@forward 'colors';
+@forward 'boilerplate';
+@forward 'typography';
+@forward 'headings';
+@forward 'buttons';

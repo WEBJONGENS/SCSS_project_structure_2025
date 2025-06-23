@@ -1,0 +1,9 @@
+@use 'functions' as f;
+
+// Mixins for font sizes and line heights using clamp()
+
+@mixin text-20-28 {
+  font-size: clamp(f.rem(20), 1.157rem + 0.49vw, f.rem(28));
+}
+
+// ...

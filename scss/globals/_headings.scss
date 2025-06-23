@@ -1,0 +1,15 @@
+@use '../util/' as u;
+@use '../globals/typography' as font;
+
+// Hier worden de mixins voor headings gedefinieerd
+
+@mixin heading-small {
+  @include u.text-20-28;
+  @include font.font-Helvetica_Neue_Regular;
+  letter-spacing: 2.3px;
+  // ...
+}
+
+@mixin heading-medium {
+  // ...
+}

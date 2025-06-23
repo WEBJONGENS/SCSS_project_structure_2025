@@ -1,0 +1,345 @@
+.nieuwsbrief {
+  .convertforms {
+    .cf-content-wrap,
+    .cf-form-wrap {
+      padding: 0;
+    }
+
+    .cf-input {
+      background-color: transparent;
+      border: 1px solid white;
+      padding: 8px 10px;
+
+      &::placeholder,
+      &:has(option:disabled:checked) {
+        color: white;
+        opacity: 0.7;
+      }
+    }
+
+    .cf-btn {
+      background-color: black !important;
+      color: white !important;
+
+      &:hover {
+        background-color: white !important;
+        color: black !important;
+      }
+    }
+
+    .cf-two-thirds {
+      display: flex;
+      align-items: center;
+    }
+
+    .cf-checkbox-group {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      font-size: 20px;
+      user-select: none;
+
+      input[type='checkbox'] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+        &:checked {
+          & + .cf-label {
+            &::before {
+              background-image: linear-gradient(#b9e9b3, #a8e4a0);
+            }
+
+            &::after {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .convertforms .cf-checkbox-group {
+        padding: 0px;
+      }
+
+      .cf-label {
+        padding-left: 1.8em;
+        display: inline-block;
+        color: #ffffff8f;
+        padding-left: 30px;
+
+        a {
+          color: #ffffff8f;
+
+          text-decoration: underline;
+
+          &:hover {
+            color: white;
+          }
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          background: white;
+          border-radius: 0px;
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3),
+            0px 1px 1px rgba(0, 0, 0, 0.05);
+          opacity: 1;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          display: none;
+          left: 11px;
+          top: 14px;
+          width: 0.35em; // Vergroot de breedte
+          height: 0.7em; // Vergroot de hoogte
+          border: solid white;
+          border-width: 0 0.15em 0.15em 0;
+          transform: translate(-50%, -50%) rotate(45deg); // Centreer en roteer
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+// WJ Copyright regel Styling ---------------------------------------------
+// algemene styling
+$color-text: var(--grey);
+$color-link: var(--grey);
+$hover-color-link: var(--light);
+// specifieke styling WEBJONGENS div
+$background-color-div: transparent; // (30% opacity)
+$padding-div: 0px;
+$color-heart: var(--grey);
+$font-size: 1rem;
+
+// javascript en html code zijn direct te vinden in het YooTheme HTML blok in module copyright
+body.s .wj-copyright-row > div {
+  flex-direction: column;
+  align-content: center;
+}
+
+.wj-copyright {
+  .wj-copyright-row {
+    & > div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 10px;
+      column-gap: 20px;
+
+      .wj-owner {
+        font-size: $font-size;
+        color: $color-text;
+        @media (max-width: 363px) {
+          text-align: center;
+        }
+      }
+
+      // Webjongens Heart + Typewriter Animation
+      // javascript en html code zijn direct te vinden in het YooTheme HTML blok in module copyright
+      .wj-typewriter {
+        width: 100%;
+        box-sizing: border-box;
+
+        span,
+        a {
+          font-size: $font-size;
+        }
+
+        span {
+          color: $color-text;
+        }
+
+        a {
+          color: $color-link;
+
+          &:hover {
+            color: $hover-color-link;
+            cursor: pointer;
+            text-decoration: none;
+          }
+        }
+        .website-section {
+          display: flex;
+          align-items: flex-start;
+          flex-wrap: wrap;
+
+          border-radius: 0.5rem;
+          padding: $padding-div;
+
+          .wj-heart {
+            align-items: flex-end !important;
+          }
+
+          @media (max-width: 363px) {
+            flex-direction: column;
+            align-items: center !important;
+            .wj-heart {
+              flex-wrap: nowrap !important;
+            }
+          }
+
+          .heart-icon {
+            position: relative;
+            margin: 0 0 0 2px;
+            fill: $color-heart;
+          }
+          .typewriter-container {
+            display: inline-block;
+            min-width: 10ch;
+            text-align: left;
+          }
+          .typewriter-text {
+            display: inline-block;
+            white-space: nowrap;
+          }
+          .cursor {
+            animation: blink 0.7s infinite;
+            display: inline-block;
+            color: $color-heart;
+          }
+          @keyframes blink {
+            0%,
+            100% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0;
+            }
+          }
+        }
+      }
+
+      .wj-cookies {
+        .uk-icon {
+          color: $color-heart;
+          fill: $color-heart;
+        }
+
+        .el-content {
+          font-size: $font-size;
+          color: $color-link;
+        }
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+//Einde wj-copyright
+
+// ------------------------------------------------------------------
+
+/*COOKIE CONSENT*/
+
+.cc-revoke {
+  background-color: transparent !important;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+}
+
+.cc-btn,
+div.cc-checkboxes-container a.cc-btn.cc-allow {
+  border: none;
+  padding: 15px 30px 15px 30px;
+  border-radius: 100px !important;
+  margin-top: 10px;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+div.cc-checkbox-container {
+  width: 100%;
+}
+
+span.cc-cookie-settings-toggler {
+  display: none;
+}
+
+div.cc-checkbox-container input:checked + span {
+  background-color: #19a319 !important;
+}
+
+div.cc-checkbox-container input + span {
+  background-color: #f7148b !important;
+}
+
+div.cc-settings-label {
+  font-size: 15px !important;
+  font-weight: normal !important;
+  margin: 15px 0 !important;
+  color: #000 !important;
+  opacity: 1 !important;
+}
+
+div.cc-checkboxes-container div.cc-checkbox-container a {
+  pointer-events: none !important;
+}
+
+.cc-message-text {
+  line-height: 150%;
+}
+
+.cc-link {
+  opacity: 1 !important;
+  color: #2e1352 !important;
+  text-decoration: none !important;
+  line-height: 30px;
+  margin-bottom: 0 !important;
+}
+
+a.cc-link.cc-cookie::before,
+a.cc-link.cc-privacy::before {
+  content: '';
+  float: left;
+  margin-right: 10px;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  background-image: url(/images/system/icons/arrow.svg);
+  background-size: cover;
+}
+
+.cc-link:hover {
+  color: #000 !important;
+}
+
+.cc-highlight {
+  margin-top: 50px;
+}
+
+.cc-header {
+  font-size: 120%;
+  color: #000;
+  margin: 0;
+
+  p {
+    margin: 0;
+  }
+}
+
+div.cc-gdpr-component-view a.cc-btn.cc-allow {
+  background-color: white;
+}
+
+div.cc-gdpr-component-view a.cc-btn.cc-allowall {
+  background-color: #c7fdbb;
+}
+// EINDE COOKIE CONSENT POPUP

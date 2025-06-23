@@ -1,0 +1,6 @@
+// Hier worden de globals en blocks mappen geforward.
+// Je moet hier geen verdere styling toevoegen.
+// Als je iets globaal wilt stylen, gebruik dan het bestand _boilerplate.scss in de globals map.
+
+@forward 'globals';
+@forward 'blokken';

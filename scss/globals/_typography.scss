@@ -1,0 +1,19 @@
+@use '../util/' as u;
+
+// Hier worden fonts ingeladen en de mixins voor de fonts gedefinieerd
+
+@font-face {
+  font-family: 'Helvetica Neue Regular';
+  src: url('/templates/yootheme_custom/webfonts/HelveticaNeue.woff2')
+      format('woff2'),
+    url('/templates/yootheme_custom/webfonts/HelveticaNeue.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin font-Helvetica_Neue_Regular {
+  font-family: 'Helvetica Neue Regular', sans-serif;
+}
+
+// ---

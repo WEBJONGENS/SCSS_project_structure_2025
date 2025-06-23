@@ -1,0 +1,68 @@
+@use '../util/' as u;
+@use '../globals' as g;
+
+.hero_section {
+  background: var(--purple100);
+
+  @include u.breakpoint-down('xlarge') {
+    background: var(--purple80);
+  }
+
+  @include u.breakpoint-down('large') {
+    background: var(--purple60);
+  }
+
+  @include u.breakpoint-down('medium') {
+    background: var(--purple40);
+  }
+
+  @include u.breakpoint-down('small') {
+    background: var(--purple20);
+  }
+
+  h1 {
+    @include g.heading-small;
+    color: white;
+
+    @include u.breakpoint-down('xlarge') {
+      color: white;
+    }
+
+    @include u.breakpoint-down('large') {
+      color: black;
+    }
+
+    @include u.breakpoint-down('medium') {
+      color: black;
+    }
+
+    @include u.breakpoint-down('small') {
+      color: black;
+    }
+  }
+
+  p {
+    @include g.font-Helvetica_Neue_Regular;
+    color: white;
+
+    @include u.breakpoint-down('xlarge') {
+      color: white;
+    }
+
+    @include u.breakpoint-down('large') {
+      color: black;
+    }
+
+    @include u.breakpoint-down('medium') {
+      color: black;
+    }
+
+    @include u.breakpoint-down('small') {
+      color: black;
+    }
+  }
+
+  .uk-button {
+    @include g.button-default;
+  }
+}

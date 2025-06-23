@@ -1,0 +1,52 @@
+@use 'functions' as f;
+
+$breakpoints-up: (
+  'small': f.em(640),
+  'medium': f.em(960),
+  'large': f.em(1200),
+  'xlarge': f.em(1600),
+);
+
+$breakpoints-down: (
+  'small': f.em(639),
+  'medium': f.em(959),
+  'large': f.em(1199),
+  'xlarge': f.em(1599),
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size )) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size )) {
+    @content;
+  }
+}
+
+// Mixin for s, m, l, xl, xxl
+@mixin breakpoint($size) {
+  @if $size == 'small' or $size == 's' {
+    @media (max-width: 639px) {
+      @content;
+    }
+  } @else if $size == 'medium' or $size == 'm' {
+    @media (min-width: 640px) and (max-width: 959px) {
+      @content;
+    }
+  } @else if $size == 'large' or $size == 'l' {
+    @media (min-width: 960px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $size == 'xlarge' {
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      @content;
+    }
+  } @else if $size == 'xxlarge' {
+    @media (min-width: 1600px) {
+      @content;
+    }
+  }
+}

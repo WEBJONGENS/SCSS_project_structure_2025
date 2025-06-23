@@ -1,0 +1,17 @@
+@use '../util/' as u;
+@use '../globals/typography' as font;
+
+// Hier worden de mixins voor buttons gedefinieerd
+
+@mixin button-default {
+  @include font.font-Helvetica_Neue_Regular;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  //...
+
+  &:hover {
+    background-color: var(--wj-green);
+  }
+}
