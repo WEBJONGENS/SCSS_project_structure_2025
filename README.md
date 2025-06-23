@@ -44,3 +44,23 @@
    ---
 
 # SCSS-projectstructuur 2025
+   ```
+templates/yootheme_custom/scss/
+├── custom.scss
+├── blokken/
+│   ├── _cookiesCopyright.scss
+│   ├── _hero_section.scss
+│   ├── _index.scss
+├── globals/
+│   ├── _boilerplate.scss
+│   ├── _buttons.scss
+│   ├── _colors.scss
+│   ├── _headings.scss
+│   ├── _index.scss
+│   ├── _typography.scss
+├── util/
+│   ├── _breakpoints.scss
+│   ├── _fontsizes.scss
+│   ├── _functions.scss
+│   ├── _index.scss
+   ```
