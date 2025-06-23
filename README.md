@@ -1,4 +1,4 @@
-# Handleiding Webjongens SCSS-compiler / SCSS-projectstructuur 2025
+# Handleiding Webjongens SCSS-compiler & SCSS-projectstructuur 2025
 ## Installatie van de SCSS-compiler
 
 1. Installeer de volgende VS Code-extensie:  
