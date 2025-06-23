@@ -103,7 +103,8 @@ Hier worden fonts geladen en de mixins voor fonts gedefinieerd.
 In deze map staan onze technische bestanden. Font-size berekeningen, breakpoints, formules, enzovoort.
 
 ### _fontsizes.scss 📄  
-Hier definiëren we de mixins voor lettergroottes en regelhoogtes met `clamp()`.  
+Hier definiëren we de mixins voor lettergroottes en regelhoogtes met `clamp()`.
+
 **Clamp Calculator: 🧮**
 https://tom-mate-o.github.io/min-max-calculator-nested/  
 *(De formule wordt nog aangepast naar `rem()`)*
