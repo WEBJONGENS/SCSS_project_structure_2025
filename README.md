@@ -17,8 +17,7 @@
        "savePathReplacementPairs": null
      }
    ],
-   "liveSassCompile.settings.generateMap": false,
-   "workbench.iconTheme": "material-icon-theme"
+   "liveSassCompile.settings.generateMap": false
    ```
 
 3. Klik in de onderste commandobalk van VS Code op het oog-icoon “Watch SASS”
@@ -105,9 +104,9 @@ In deze map staan onze technische bestanden. Font-size berekeningen, breakpoints
 ### _fontsizes.scss 📄  
 Hier definiëren we de mixins voor lettergroottes en regelhoogtes met `clamp()`.
 
-**Clamp Calculator: 🧮**
+**WJ - Clamp Calculator van Thomas: 🧮**
 https://tom-mate-o.github.io/min-max-calculator-nested/  
-*(De formule wordt nog aangepast naar `rem()`)*
+
 
 ### _functions.scss 📄  
 Hier worden de functies `pxToRem` en `pxToEm` gedefinieerd, enzovoort.  
