@@ -34,7 +34,7 @@
    "useTempFile": false,
    "openSsh": false,
    "watcher": {
-     "files": "**/*.{scss,sass,css,js,html,php}",
+     "files": "**/*.{css,js,html,php}",
      "autoUpload": true,
      "autoDelete": false
    }
