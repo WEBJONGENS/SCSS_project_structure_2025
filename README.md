@@ -30,7 +30,6 @@
    (*Een watcher zodat wijzigingen in CSS-bestanden worden herkend en geüpload*)
 
    ```json
-   {
     "name": "My Server",
     "host": "localhost",
     "protocol": "sftp",
@@ -45,8 +44,7 @@
         "files": "**/*.{css,js,html,php}",
         "autoUpload": true,
         "autoDelete": false
-      }
-   }
+      } 
    ```
 
    ---
