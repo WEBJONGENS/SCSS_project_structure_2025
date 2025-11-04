@@ -45,8 +45,8 @@
         "files": "**/*.{css,js,html,php}",
         "autoUpload": true,
         "autoDelete": false
-    }
-}
+      }
+   }
    ```
 
    ---
