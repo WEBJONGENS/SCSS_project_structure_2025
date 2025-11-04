@@ -36,7 +36,7 @@
     "port": 22,
     "username": "username",
     "password": "password",
-    "remotePath": "/",
+    "remotePath": "/public_html/",
     "uploadOnSave": true,
     "useTempFile": false,
     "openSsh": false,
