@@ -33,7 +33,7 @@
     "name": "My Server",
     "host": "localhost",
     "protocol": "sftp",
-    "port": 22,
+    "port": 21,
     "username": "username",
     "password": "password",
     "remotePath": "/public_html/",
