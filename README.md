@@ -31,8 +31,8 @@
 
    ```json
    {
-      "name": "My Server",
-      "host": "localhost",
+      "name": "web** domain.nl",
+      "host": "web**.texelhosting.nl",
       "protocol": "ftp",
       "port": 21,
       "username": "username",
