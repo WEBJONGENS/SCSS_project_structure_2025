@@ -30,21 +30,23 @@
    (*Een watcher zodat wijzigingen in CSS-bestanden worden herkend en geüpload*)
 
    ```json
-    "name": "My Server",
-    "host": "localhost",
-    "protocol": "sftp",
-    "port": 21,
-    "username": "username",
-    "password": "password",
-    "remotePath": "/public_html/",
-    "uploadOnSave": true,
-    "useTempFile": false,
-    "openSsh": false,
-    "watcher": {
-        "files": "**/*.{css,js,html,php}",
-        "autoUpload": true,
-        "autoDelete": false
-      } 
+   {
+      "name": "My Server",
+      "host": "localhost",
+      "protocol": "ftp",
+      "port": 21,
+      "username": "username",
+      "password": "password",
+      "remotePath": "/public_html/",
+      "uploadOnSave": true,
+      "useTempFile": false,
+      "openSsh": false,
+      "watcher": {
+            "files": "**/*.{css,js,html,php}",
+            "autoUpload": true,
+            "autoDelete": false
+         }
+   } 
    ```
 
    ---
