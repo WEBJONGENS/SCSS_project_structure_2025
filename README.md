@@ -42,13 +42,13 @@
       "uploadOnSave": true,
       "useTempFile": false,
       "openSsh": false,
-   "ignore": [
+      "ignore": [
         "**/.vscode",
         "**/settings.json",
         "**/sftp.json",
         ".git",
         ".DS_Store"
-    ],
+          ],
       "watcher": {
             "files": "**/*.{css,js,html,php}",
             "autoUpload": true,
