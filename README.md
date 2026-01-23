@@ -1,5 +1,6 @@
 # Handleiding Webjongens SCSS-compiler & SCSS-projectstructuur 2025
 ## Installatie van de SCSS-compiler
+(alleen bij het opnieuw instellen van vs code)
 
 1. Installeer de volgende VS Code-extensie:  
    [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
@@ -41,6 +42,13 @@
       "uploadOnSave": true,
       "useTempFile": false,
       "openSsh": false,
+   "ignore": [
+        "**/.vscode",
+        "**/settings.json",
+        "**/sftp.json",
+        ".git",
+        ".DS_Store"
+    ],
       "watcher": {
             "files": "**/*.{css,js,html,php}",
             "autoUpload": true,
